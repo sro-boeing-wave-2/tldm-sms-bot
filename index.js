@@ -5,13 +5,12 @@ const signalR = require('@aspnet/signalr');
 XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 WebSocket = require('websocket').w3cwebsocket;
 
-// var auth = sinchAuth("2c7726a3-a0b7-4f86-84a1-7a50094f10f2", "NcZTgeR3FUGv7TiyUtH4sQ==");
-// sinchSms.sendMessage("+918681902904", "Hello From TLDM - Rishabh!");
 
-//var chatHubUrl = "http://13.233.42.222/chat-api/chat";
-var chatHubUrl = "http://172.23.238.206:7001/chat-api/chat";
-//var chatApiUrl = "http://13.233.42.222/chat-api/api/chat/workspaces/workspacename/"
-var chatApiUrl = "http://172.23.238.206:7001/chat-api/api/chat/workspaces/workspacename/"
+
+var chatHubUrl = "http://13.233.42.222/chat-api/chat";
+//var chatHubUrl = "http://172.23.238.206:7001/chat-api/chat";
+var chatApiUrl = "http://13.233.42.222/chat-api/api/chat/workspaces/workspacename/"
+//var chatApiUrl = "http://172.23.238.206:7001/chat-api/api/chat/workspaces/workspacename/"
 
 const connection = new signalR.HubConnectionBuilder()
     .withUrl(chatHubUrl)
