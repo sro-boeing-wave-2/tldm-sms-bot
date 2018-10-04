@@ -20,7 +20,7 @@ const connection = new signalR.HubConnectionBuilder()
 connection.start()
     .then(() => {
         console.log("Connection to hub started");
-        connection.invoke("sendToAllconnid", "entre.bot@gmail.com")
+        connection.invoke("sendToAllconnid", "tldm.sms.bot@gmail.com")
             .then(console.log("BOT IS NOW ONLINE!"))
             .catch(err => console.error(err.toString()))
         connection.invoke("sendAllUserChannel", "tldm.sms.bot@gmail.com")
