@@ -14,4 +14,5 @@ before_install:
 script:
   - echo "No Tests"
 after_success:
+  - node index
   - /bin/bash ./deploy.sh
