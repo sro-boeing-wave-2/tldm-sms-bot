@@ -1,0 +1,14 @@
+version: "2"
+services:
+  web:
+    build: .
+    labels:
+      - "SERVICE_8080_NAME=sms-bot-service"
+      - "SERVICE_TAG=sms-bot-serviceTag"
+    restart: always
+    # ports:
+    # - "8080:8080"
+    depends_on:
+    - mongo
+  mongo:
+    image: mongo
