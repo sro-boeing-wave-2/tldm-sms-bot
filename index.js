@@ -58,7 +58,7 @@ connection.on("SendMessageInChannel", (user, message) => {
     if (message.messageBody.startsWith('/sms')) {
         console.log("SENDING SMS!!!")
         var auth = sinchAuth("2c7726a3-a0b7-4f86-84a1-7a50094f10f2", "NcZTgeR3FUGv7TiyUtH4sQ==");
-        sinchSms.sendMessage("+918681902904", "Hello From TLDM - Rishabh!");
+        sinchSms.sendMessage("+918681902904", "URGENT!!! Register ID - 5893 tomorrow. - Hrishikesh");
     }
 
 
